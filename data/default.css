@@ -43,7 +43,7 @@ p, ol, ul, blockquote {
 }
 
 a {
-    color: #6536CB;
+    color: #cb831d;
 }
 
 a:hover {
@@ -150,12 +150,12 @@ img {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    background-color: #6536CB;
+    background-color: #cb831d;
     padding: 8px 8px;
     border-radius: 8px;
 }
 #menu a:hover{
-	background-color: #9F81E1;
+	background-color: #caa46d;
 }
 
 #menu .first a {
@@ -245,7 +245,7 @@ table#program td:nth-child(1) {
     width: 110px;
 } */
 tr.row_type_tt {
-	background-color: #6536cb;
+	background-color: #cb831d;
 }
 tr.row_type_A {
 	background-color: #EEE;
@@ -260,7 +260,7 @@ tr.row_type_D {
 	background-color: #9FC2CC;
 }
 tr.row_type_E {
-	background-color: #8075FF;
+	background-color: #ca9e60;
 }
 tr.row_type_F {
 	background-color: #CAD5CA;
@@ -329,7 +329,7 @@ button:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #6536CB;
+    background-color: #cb831d;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -337,5 +337,5 @@ button:hover {
 }
 
 #myBtn:hover {
-    background-color: #9F81E1;
+    background-color: #daa65e;
 }
