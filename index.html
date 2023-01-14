@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ECCV22 VOLI Workshop</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="data/default.css" rel="stylesheet" type="text/css" />
+    <meta property='og:title' content='ECCV22 VOLI Workshop: Visual Object-oriented Learning meets Interaction: Discovery, Representations, and Applications'/>
+    <meta property='og:url' content='https://geometry.stanford.edu/voli' />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="logo">
+	<h1>
+		<center>
+	    	 <span style="font-size:50%;color:#777;font-weight:normal">The first Workshop on</span><br>
+             Visual Object-oriented Learning meets Interaction (VOLI): <br>
+             Discovery, Representations, and Applications
+		</center>
+	</h1><br>
+	<h2>
+		<center>
+      <span style="font-size:92%;color:#777;font-weight:normal">October 24 @ 
+          <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a> 
+      <span style="font-size:92%;color:#777;font-weight:bold">Virtual</span>
+		</center>
+	</h2><br>
+	</div>
+
+  <div id="menu">
+    <center>
+      <ul>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="./schedule.html" accesskey="2">Schedule</a></li>
+        <li><a href="./papers.html" accesskey="3">Papers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </center>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+                } else {
+                        mybutton.style.display = "none";
+                          }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+      document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+	<div id="content">
+<h2>News</h2>
+<p>
+<ul>
+<li>
+    <img src="data/new.gif"> [Nov 2, 2022] Here are the recordings for the workshop talks and panel discussion: 
+    [<a href="https://youtu.be/gRb16mGlI7Y" target="_blank">Morning Part</a>] 
+    [<a href="https://youtu.be/6ud-Z24OrL4" target="_blank">Afternoon Part</a>]
+</li>
+<li>
+    [Oct 24, 2022] We are live-streaming the workshop soon 9 AM - 5:30 PM Tel-Aviv Time (GMT+3) on Oct 24th! 
+    Here is <a href="https://live.allintheloop.net/App/ortra/ortraECCV2022" target="_blank">the ECCV Platform</a> (please log in using your ECCV credentials, click "Workshops", then "Oct 24", find our workshop and click "Join Now").
+</li>
+<li>
+    [Oct 24, 2022] Check out <a href="./schedule.html">the full schedule</a> and <a href="./papers.html">the accepted papers</a>.
+</li>
+<li>
+    [Oct 24, 2022] We will host <a href="https://app.gather.town/app/zDHzSsCHaRrEvEq4/ECCV%20VOLI%20Workshop" target="_blank">the poster session</a> on GatherTown (check out <a href="./gathertown_instruction.pdf" target="_blank">the GatherTown instructions</a> on how to join).
+</li>
+<li>
+    [Apr 6, 2022] Workshop website launched, with <a href="#cfp">Call-for-Papers</a> and <a href="#speakers">tentative speakers</a> announced.
+</li>
+</ul>
+</p>
+
+
+<h2>Introduction</h2>
+<p>
+Objects, as the most basic and composable units in visual data, exist in specific visual appearances and geometrical forms, carrying rich semantic, functional, dynamic, and relational information. One may discover objects by watching passive videos or actively interacting with the world to find them. Once detected, it is also an open research problem how to interact with the objects to extract and represent such object-oriented semantics. Furthermore, such representations need to be designed easily useful for various downstream perception and robotic interaction tasks. It is a crucial research domain for studying how to define, discover, and represent objects in visual data from/for interaction, and use them for various downstream applications.
+</p>
+<p>
+In this workshop, we will be focusing on discussing learning formulations, approaches, and methodologies that define/discover "objects" (e.g., objects, parts, concepts) from/for interaction (e.g., objects interact in the world, agents interact with objects) in unsupervised, weak-supervised, and/or self-supervised manners, design/learn task-agnostic or task-aware visual representations for various object-oriented properties (e.g., dynamics, functionality, affordance), and/or explores ways to apply the developed object-oriented methods to different downstream applications in different fields (e.g., machine learning, computer graphics, computer vision, robotics, cognition). 
+Some concrete examples are listed below.
+</p>
+<ul>
+    <li>How to define/discover visual ”objects” from/for interaction?</li>
+    <ul>
+        <li>How to define the concepts of objects from/for downstream tasks?</li>
+        <li>How to achieve unsupervised, weak-supervised, self-supervised interaction, or embodied learning for object discovery?</li>
+        <li>What are different approaches to discover objects?</li>
+    </ul>
+    <li>What are good object-oriented representations and how to learn them from/for interaction?</li>
+    <ul>
+        <li>What properties of objects need to be learned and can be learned from/for interactions?</li>
+        <li>How to design suitable learning representations for different desired object attributes? Is there a unified way to represent desired object properties for various downstream tasks?</li>
+        <li>Shall we learn task-agnostic or task-aware representations? How to extract, learn, represent, and use the learned task-aware information?</li>
+    </ul>
+    <li>How to learn useful object-oriented representations for different downstream applications?</li>
+    <ul>
+        <li>What object-oriented representations do different tasks from different fields need? How much they are similar or different?</li>
+        <li>Do we need to learn task-specific representations? Can we learn universal object representations for all tasks?</li>
+        <li>How to design learning approaches that can allow objects or agents to interact with the "objects" in the environment for better learning representations for downstream tasks?</li>
+    </ul>
+</ul>
+</ul>
+</p>
+
+	
+<h2 id="speakers">Invited Speakers (Check out the <a href="./schedule.html">Full Schedule</a>)</h2>
+<center>
+
+<table style="width:100%">
+<p>
+
+<tr>
+<td><center><a href="http://akosiorek.github.io/about/" target="_blank"> <img alt src="data/adam.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://chrisdxie.github.io/" target="_blank"><img alt src="data/chris.jpg" height="170"/> </a></center> </td>
+<td><center><a href="http://qwlouse.github.io/" target="_blank"><img alt src="data/klaus.jpg" height="170"/> </a></center></td>
+<td><center><a href="https://yzhu.io/" target="_blank"> <img alt src="data/yixin.jpg" height="170"/> </a></center> </td>
+</tr>
+<tr>
+<td> <center> <h3> Adam R. Kosiorek</h3> </center></td>
+<td> <center> <h3> Christopher Xie</h3> </center></td>
+<td> <center> <h3> Klaus Greff</h3> </center></td>
+<td> <center> <h3> Yixin Zhu </h3> </center></td>
+</tr>
+<tr>
+<td> <center> <font size= "2">DeepMind</font></center> </td>
+<td> <center> <font size= "2">Meta Reality Labs</font></center> </td>
+<td> <center> <font size= "2">Google Research</font></center> </td>
+<td> <center> <font size= "2">Peking University</font></center> </td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+<tr>
+<td><center><a href="https://web.stanford.edu/~bohg/" target="_blank"> <img alt src="data/jean.png" height="170"/> </a></center> </td>
+<td><center><a href="https://cseweb.ucsd.edu/~haosu/" target="_blank"> <img alt src="data/hao.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://sungjinahn.com" target="_blank"> <img alt src="data/sungjin.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://cogtoolslab.github.io" target="_blank"> <img alt src="data/judith.jpg" height="170"/> </a></center> </td>
+</tr>
+<tr>
+<td> <center> <h3> Jeannette Bohg </h3> </center></td>
+<td> <center> <h3> Hao Su </h3> </center></td>
+<td> <center> <h3> Sungjin Ahn </h3> </center></td>
+<td> <center> <h3> Judith Fan </h3> </center></td>
+</tr>
+<tr>
+<td> <center> <font size= "2">Stanford</font></center> </td>
+<td> <center> <font size= "2">UCSD</font></center> </td>
+<td> <center> <font size= "2">KAIST</font></center> </td>
+<td> <center> <font size= "2">UCSD</font></center> </td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+<tr>
+<td><center><a href="https://tkipf.github.io/" target="_blank"> <img alt src="data/thomas.jpg" height="170"/> </a></center> </td>
+<td><center><a href="http://web.cs.ucla.edu/~soatto/" target="_blank"> <img alt src="data/stefano.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://www.cis.upenn.edu/~kostas/" target="_blank"> <img alt src="data/kostas.jpg" height="170"/> </a></center> </td>
+<td><center><a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/" target="_blank"> <img alt src="data/niloy.jpg" height="170"/> </a></center> </td>
+</tr>
+<tr>
+<td> <center> <h3> Thomas Kipf </h3> </center></td>
+<td> <center> <h3> Stefano Soatto </h3> </center></td>
+<td> <center> <h3> Kostas Daniilidis </h3> </center></td>
+<td> <center> <h3> Niloy Mitra </h3> </center></td>
+</tr>
+<tr>
+<td> <center> <font size= "2">Google Brain</font></center> </td>
+<td> <center> <font size= "2">UCLA &#38; Amazon</font></center> </td>
+<td> <center> <font size= "2">UPenn</font></center> </td>
+<td> <center> <font size= "2">UCL &#38; Adobe</font></center> </td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+
+</p>
+</table>
+</center>
+
+
+<h2 id="cfp">Call for Papers (Check out the <a href="./papers.html">Accepted Papers</a>)</h2>
+<p>
+We accept both archival and non-archival paper submissions. The accepted archival papers will be included in the ECCV22 conference proceedings, while the non-archival ones will just be presented in the workshop. All papers will be peer-reviewed by three experts in the field in a double-blind manner. We also welcome papers that are accepted to the ECCV main conference or other previous conferences to present your work in the non-archival paper track. There is no need for peer-review for such previously accepted papers, so please indicate clearly in the submission form. Every accepted paper will have the opportunity to give a 5-min spotlight presentation and host two 30-min poster sessions (12-hours separated).
+</p>
+<h3>Submission Site: <a href="https://cmt3.research.microsoft.com/VOLI2022" target="_blank">https://cmt3.research.microsoft.com/VOLI2022</a></h3><br>
+<h3>Submission Instructions:</h3>
+<p>Please use the <a href="https://eccv2022.ecva.net/submission/call-for-papers" target="_blank">official ECCV template</a> (under "Submission Guidelines") for your submissions. Make sure to anonymize your submission.</p>
+<h3>Timeline Table (11:59 PM, Pacific Time)</h3>
+<ul>
+    <li>Friday, Jul 15: Paper submission deadline</li>
+    <li>Friday, Aug 5: Review deadline</li>
+    <li>Friday, Aug 12: decision announced to authors</li>
+    <li>Monday, Aug 22: Camera ready deadline</li>
+</ul>
+</p>
+
+
+
+<h2 id="organizers">Organizers</h2>
+<center>
+
+<table style="width:100%">
+<p>
+
+<tr>
+<td><center><a href="https://cs.stanford.edu/~kaichun/" target="_blank"> <img alt src="data/kaichun.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://yanchaoyang.github.io/" target="_blank"><img alt src="data/yanchao.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://cseweb.ucsd.edu/~jigu/" target="_blank"> <img alt src="data/jiayuan.jpg" height="170"/> </a></center> </td>
+</tr>
+<tr>
+<td> <center> <h3> Kaichun Mo </h3> </center></td>
+<td> <center> <h3> Yanchao Yang </h3> </center></td>
+<td> <center> <h3> Jiayuan Gu </h3> </center></td>
+</tr>
+<tr>
+<td> <center> <font size= "2">Stanford &#38; NVIDIA</font></center> </td>
+<td> <center> <font size= "2">Stanford</font></center> </td>
+<td> <center> <font size= "2">UCSD</font></center> </td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+<tr>
+<td><center><a href="https://shubhtuls.github.io/" target="_blank"> <img alt src="data/shubham.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://www.psych.ucla.edu/faculty-page/hongjing/" target="_blank"> <img alt src="data/hongjing.jpg" height="170"/> </a></center> </td>
+<td><center><a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank"> <img alt src="data/leo.jpg" height="170"/> </a></center> </td>
+</tr>
+<tr>
+<td> <center> <h3> Shubham Tulsiani </h3> </center></td>
+<td> <center> <h3> Hongjing Lu </h3> </center></td>
+<td> <center> <h3> Leonidas Guibas </h3> </center></td>
+</tr>
+<tr>
+<td> <center> <font size= "2"> CMU </font></center> </td>
+<td> <center> <font size= "2"> UCLA </font></center> </td>
+<td> <center> <font size= "2"> Stanford </font></center> </td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+</p>
+</table>
+</center>
+
+
+<h2 id="contact">Contact Info</h2>
+<p>E-mail: 
+<a href="mailto:kaichun@cs.stanford.edu" target="_blank">kaichun@cs.stanford.edu</a>
+</p>
+
+<h2 id="contact">Acknowledgements</h2>
+<p>Website template borrowed from: 
+<a href="https://futurecv.github.io/" target="_blank">https://futurecv.github.io/</a>
+(Thanks to <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a>)
+</p>
+
+
+<div style="clear: both;">&nbsp;</div>
+</div><br><br>
+
+</body>
+</html>

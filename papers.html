@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ECCV22 VOLI Workshop</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="data/default.css" rel="stylesheet" type="text/css" />
+    <meta property='og:title' content='ECCV22 VOLI Workshop: Visual Object-oriented Learning meets Interaction: Discovery, Representations, and Applications'/>
+    <meta property='og:url' content='https://geometry.stanford.edu/voli' />
+    <meta property="og:type" content="website" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function moreOrLess(tableData) {
+            obj = tableData.find("span");
+            button = tableData.find("button");
+            console.log(obj.hasClass("hidden"))
+            if (obj.hasClass("hidden")) {
+                obj.slideDown("fast");
+                obj.removeClass("hidden");
+                button.html("Hide Abstract");
+            } else {
+                obj.slideUp("fast");
+                obj.addClass("hidden");
+                button.html("Show Abstract");
+            }
+        }
+    </script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="logo">
+	<h1>
+		<center>
+	    	 <span style="font-size:50%;color:#777;font-weight:normal">The first Workshop on</span><br>
+             Visual Object-oriented Learning meets Interaction (VOLI): <br>
+             Discovery, Representations, and Applications
+		</center>
+	</h1><br>
+	<h2>
+		<center>
+      <span style="font-size:92%;color:#777;font-weight:normal">October 24 @ 
+          <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a> 
+      <span style="font-size:92%;color:#777;font-weight:bold">Virtual</span>
+		</center>
+	</h2><br>
+	</div>
+  
+    <div id="menu">
+    <center>
+      <ul>
+        <li class="first"><a href="./index.html" accesskey="1">Home</a></li>
+      </ul>
+    </center>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+                } else {
+                        mybutton.style.display = "none";
+                          }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+      document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+        <div id="content">
+<p>
+<ul>
+<li>
+    We are hosting <a href="https://app.gather.town/app/zDHzSsCHaRrEvEq4/ECCV%20VOLI%20Workshop" target="_blank">the poster session</a> on GatherTown (check out <a href="./gathertown_instruction.pdf" target="_blank">the GatherTown instructions</a> on how to join).
+</li>
+</ul>
+</p>
+
+
+            <h2>Archival Workshop Publications</h2>
+            <table>
+                <tr class="row_type_A">
+                    <td width="20px" , class="paper_id">1</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">Jongha Kim, Jinheon Baek, Sung Ju Hwang</span></strong>
+                            Korea University, KAIST, and AITRICS
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/1.pdf" target="_blank">[PDF]</a>
+                            <a href="https://youtu.be/6cZU59kWiLc" target="_blank">[Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper1">
+                        <p class="poster_title">Object Detection in Aerial Images with Uncertainty-Aware Graph Network
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+                            In this work, we propose a novel uncertainty-aware object detection framework with a structured-graph, where nodes and edges are denoted by objects and their spatial-semantic similarities, respectively. Specifically, we aim to consider relationships among objects for effectively contextualizing them. To achieve this, we first detect objects and then measure their semantic and spatial distances to construct an object graph, which is then represented by a graph neural network (GNN) for refining visual CNN features for objects. However, refining CNN features and detection results of every object are inefficient and may not be necessary, as that include correct predictions with low uncertainties. Therefore, we propose to handle uncertain objects by not only transferring the representation from certain objects (sources) to uncertain objects (targets) over the directed graph, but also improving CNN features only on objects regarded as uncertain with their representational outputs from the GNN. Furthermore, we calculate a training loss by giving larger weights on uncertain objects, to concentrate on improving uncertain object predictions while maintaining high performances on certain objects. We refer to our model as Uncertainty-Aware Graph network for object DETection (UAGDet). We then experimentally validate ours on the challenging large-scale aerial image dataset, namely DOTA, that consists of lots of objects with small to large sizes in an image, on which ours improves the performance of the existing object detection network.
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper1'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+                </table>
+                                
+            <h2>Non-archival Paper Presentations</h2>
+            <table>
+                <tr class="row_type_A">
+                    <td width="20px" , class="paper_id">2</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">Tzofi M Klinghoffer, Kushagra Tiwary, Arkadiusz Balata, Vivek Sharma, Ramesh Raskar
+                                </span></strong>
+                            MIT
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/2.pdf" target="_blank">[PDF]</a>
+                            <a href="https://youtu.be/MHKThk-rtfE" target="_blank">[Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper2">
+                        <p class="poster_title">
+                        Learning Task-Agnostic 3D Representations of Objects by De-Rendering
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+                            State-of-the-art unsupervised representation learning methods typically do not exploit the physical properties of objects, such as geometry, albedo, lighting, and camera view, and, when they do, multi-view images are often needed for training. We show that de-rendering, a way to reverse the rendering process to recover these properties from single images without supervision, can also be used to learn task-agnostic representations, which we dub physically disentangled representations (PDRs). While de-renderers predict distinct physical properties, the features learned in the process may not be disentangled. To ensure meaningful features are encoded by de-rendering and thus prevent overreliance on decoders, we propose a novel Leave-One-Out, Cycle Contrastive loss (LOOCC) to improve feature disentanglement w.r.t. physical properties, which leads to higher downstream accuracy. We evaluate PDRs on downstream clustering tasks, including car classification and face identification. We perform a comparison of our method with other generative representation learning methods for these tasks and find PDRs consistently yield higher accuracy, outperforming evaluated baselines by as much as 18%.
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper2'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+               
+               <tr class="row_type_B">
+                    <td width="20px" , class="paper_id">3</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">
+                            Samuele Papa, Ole Winther, Andrea Dittadi
+                                </span></strong>
+                                    University of Amsterdam, DTU and KU, Technical University of Denmark
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/3.pdf" target="_blank">[PDF]</a>
+                            <a href="https://youtu.be/SxSTnCz-6fo" target="_blank">[Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper3">
+                        <p class="poster_title">
+                        Inductive Biases for Object-Centric Representations in the Presence of Complex Textures
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+                            Understanding which inductive biases could be helpful for the unsupervised learning of object-centric representations of natural scenes is challenging. <br/>In this paper, we systematically investigate the performance of two models on datasets where neural style transfer was used to obtain objects with complex textures while still retaining ground-truth annotations. We find that by using a single module to reconstruct both the shape and visual appearance of each object, the model learns more useful representations and achieves better object separation. In addition, we observe that adjusting the latent space size is insufficient to improve segmentation performance. Finally, the downstream usefulness of the representations is significantly more strongly correlated with segmentation quality than with reconstruction accuracy.
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper3'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+                 
+
+                <tr class="row_type_A">
+                    <td width="20px" , class="paper_id">4</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">
+                                    Chao Xu, Yixin Chen, He Wang, Song-Chun Zhu, Yixin Zhu, Siyuan Huang
+                                </span></strong>
+                                UC Los Angeles, Peking University, Beijing Institute of General Artificial Intelligence
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/4.pdf" target="_blank">[PDF]</a>
+                            <a href="./papers/4_supp.pdf" target="_blank">[Supp]</a>
+                            <a href="https://youtu.be/KjlHQj0F-Ss" target="_blank">[Video]</a>
+                            <a href="https://youtu.be/cns14_XveMo" target="_blank">[Long Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper4">
+                        <p class="poster_title">
+                        PartAfford: Part-level Affordance Discovery from Cross-category 3D Objects
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+Understanding what objects could furnish for humans--viz., learning object affordance--is the crux to bridge perception and action. In the vision community, prior work primarily focuses on learning object affordance with dense (\eg, at a per-pixel level) supervision. In stark contrast, we humans learn the object affordance without dense labels. As such, the fundamental question to devise a computational model is: What is the natural way to learn the object affordance from geometry with humanlike sparse supervision? In this work, we present a new task of part-level affordance discovery (PartAfford): Given only the affordance labels per object, the machine is tasked to (i) decompose 3D shapes into parts and (ii) discover how each part of the object corresponds to a certain affordance category. We propose a novel learning framework for PartAfford, which discovers part-level representations by leveraging only the affordance set supervision and geometric primitive regularization, without dense supervision. To learn and evaluate PartAfford, we construct a part-level, cross-category 3D object affordance dataset, annotated with 24 affordance categories shared among &gt;25,000 objects. We demonstrate that our method enables both the abstraction of 3D objects and part-level affordance discovery, with generalizability to difficult and cross-category examples. Further ablations reveal the contribution of each component.
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper4'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+                 
+                
+                <tr class="row_type_B">
+                    <td width="20px" , class="paper_id">5</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">
+                                    Hanxiao Jiang, Yongsen Mao, Manolis Savva, Angel X Chang
+                                </span></strong>
+                                    Simon Fraser University
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/5.pdf" target="_blank">[PDF]</a>
+                            <a href="https://youtu.be/3vGELym_454" target="_blank">[Video]</a>
+                            <a href="https://youtu.be/sgBiFgJQVm8" target="_blank">[Long Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper5">
+                        <p class="poster_title">
+                        OPD: Single-view 3D Openable Part Detection
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+We address the task of predicting what parts of an object can open and how they move when they do so. The input is a single image of an object, and as output we detect what parts of the object can open, and the motion parameters describing the articulation of each openable part. To tackle this task, we create two datasets of 3D objects: OPDSynth based on existing synthetic objects, and OPDReal based on RGBD reconstructions of real objects. We then design OPDRCNN, a neural architecture that detects openable parts and predicts their motion parameters. Our experiments show that this is a challenging task especially when considering generalization across object categories, and the limited amount of information in a single image. Our architecture outperforms baselines and prior work especially for RGB image inputs.
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper5'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+                 
+                
+                <tr class="row_type_A">
+                    <td width="20px" , class="paper_id">6</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">
+                                    Aleksandr Kim, Guillem Brasó, Aljosa Osep, Laura Leal-Taixé
+                                </span></strong>
+                                Technical University of Munich
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/6.pdf" target="_blank">[PDF]</a>
+                            <a href="https://youtu.be/XnPidIpOUN0" target="_blank">[Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper6">
+                        <p class="poster_title">
+                        PolarMOT: How Far Can Geometric Relations Take Us in 3D Multi-Object Tracking?
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+Most (3D) multi-object tracking methods rely on appearance-based cues for data association. By contrast, we investigate how far we can get by only encoding geometric relationships between objects in 3D space as cues for data-driven data association. We encode 3D detections as nodes in a graph, where spatial and temporal pairwise relations among objects are encoded via localized polar coordinates on graph edges. This representation makes our geometric relations invariant to global transformations and smooth trajectory changes, especially under non-holonomic motion. This allows our graph neural network to learn to effectively encode temporal and spatial interactions and fully leverage contextual and motion cues to obtain final scene interpretation by posing data association as edge classification. We establish a new state-of-the-art on nuScenes dataset and, more importantly, show that our method, PolarMOT, generalizes remarkably well across different locations (Boston, Singapore, Karlsruhe) and datasets (nuScenes and KITTI)
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper6'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+                 
+ 
+                <tr class="row_type_B">
+                    <td width="20px" , class="paper_id">7</td>
+                    <td width="200px">
+                        <div style="text-align: center;">
+                            <strong><span class="author">
+                                    Himangi Mittal, Pedro Morgado, Unnat Jain, Abhinav Gupta
+                                </span></strong>
+                                CMU, UWD, UIUC
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="./papers/7.pdf" target="_blank">[PDF]</a>
+                            <a href="https://youtu.be/PIr22TmQgXQ" target="_blank">[Video]</a>
+                        </div>
+                    </td>
+                    <td id="paper7">
+                        <p class="poster_title">
+                        Self-Supervised Representation Learning from Videos of Audible Interactions
+                        </p>
+                        <span class="hidden">
+                            <p><strong>Abstract:</strong>
+We propose a self-supervised algorithm to learn representations from egocentric video data. Given the uncurated nature of long-form continuous videos, learning effective representations require focusing on moments in time when interactions take place. To achieve this, we leverage audio signals to identify moments of likely interactions and also propose a novel self-supervised objective that learns from audible state changes caused by interactions. We validate these contributions on two large-scale egocentric datasets, EPIC-Kitchens-100 and Ego4D, and show improvements on downstream task of action recognition.
+                            </p>
+                        </span>
+                        <div style="text-align: center;">
+                            <button onclick="moreOrLess($('#paper7'))">Show Abstract</button>
+                        </div>
+                    </td>
+                </tr>
+                               
+            </table>
+
+
+<h2 id="contact">Contact Info</h2>
+<p>E-mail: 
+<a href="mailto:kaichun@cs.stanford.edu" target="_blank">kaichun@cs.stanford.edu</a>
+</p>
+
+
+
+<div style="clear: both;">&nbsp;</div>
+</div><br><br>
+
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ECCV22 VOLI Workshop</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="data/default.css" rel="stylesheet" type="text/css" />
+    <meta property='og:title' content='ECCV22 VOLI Workshop: Visual Object-oriented Learning meets Interaction: Discovery, Representations, and Applications'/>
+    <meta property='og:url' content='https://geometry.stanford.edu/voli' />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="logo">
+	<h1>
+		<center>
+	    	 <span style="font-size:50%;color:#777;font-weight:normal">The first Workshop on</span><br>
+             Visual Object-oriented Learning meets Interaction (VOLI): <br>
+             Discovery, Representations, and Applications
+		</center>
+	</h1><br>
+	<h2>
+		<center>
+      <span style="font-size:92%;color:#777;font-weight:normal">October 24 @ 
+          <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a> 
+      <span style="font-size:92%;color:#777;font-weight:bold">Virtual</span>
+		</center>
+	</h2><br>
+	</div>
+  
+    <div id="menu">
+    <center>
+      <ul>
+        <li class="first"><a href="./index.html" accesskey="1">Home</a></li>
+      </ul>
+    </center>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+                } else {
+                        mybutton.style.display = "none";
+                          }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+      document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<div id="content">
+  <div id="tz_select">
+     <p><h2 style="color:purple;">Select your time zone<br>Default: Tel-Aviv Time (GMT/UTC+3)</h2></p>
+    <select class="form-control"></select>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./tz_selector/timezones.full.js"></script>
+        <script>
+          function setTimezone(tz) {
+            options = {
+              timeZone: tz, 
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit', 
+              minute: '2-digit' 
+            }
+            block_options = {
+              timeZone: tz, 
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit', 
+              minute: '2-digit' 
+            }
+            schedule = {
+              "#sec1_talk1_start" : new Date(Date.parse("23 Oct 2022 23:10:00 PDT")),
+              "#sec1_talk1_end": new Date(Date.parse("23 Oct 2022 23:40:00 PDT")),
+
+              "#sec1_talk2_start" : new Date(Date.parse("23 Oct 2022 23:45:00 PDT")),
+              "#sec1_talk2_end": new Date(Date.parse("24 Oct 2022 00:15:00 PDT")),
+
+              "#sec1_talk3_start" : new Date(Date.parse("24 Oct 2022 00:20:00 PDT")),
+              "#sec1_talk3_end": new Date(Date.parse("24 Oct 2022 00:50:00 PDT")),
+
+              "#sec2_talk1_start" : new Date(Date.parse("24 Oct 2022 01:00:00 PDT")),
+              "#sec2_talk1_end": new Date(Date.parse("24 Oct 2022 01:30:00 PDT")),
+
+              "#sec2_talk2_start" : new Date(Date.parse("24 Oct 2022 01:35:00 PDT")),
+              "#sec2_talk2_end": new Date(Date.parse("24 Oct 2022 02:05:00 PDT")),
+
+              "#sec2_talk3_start" : new Date(Date.parse("24 Oct 2022 02:10:00 PDT")),
+              "#sec2_talk3_end": new Date(Date.parse("24 Oct 2022 02:40:00 PDT")),
+              
+              "#sec3_talk1_start" : new Date(Date.parse("24 Oct 2022 03:30:00 PDT")),
+              "#sec3_talk1_end": new Date(Date.parse("24 Oct 2022 04:00:00 PDT")),
+
+              "#sec3_talk2_start" : new Date(Date.parse("24 Oct 2022 04:05:00 PDT")),
+              "#sec3_talk2_end": new Date(Date.parse("24 Oct 2022 04:35:00 PDT")),
+
+              "#sec3_talk3_start" : new Date(Date.parse("24 Oct 2022 04:40:00 PDT")),
+              "#sec3_talk3_end": new Date(Date.parse("24 Oct 2022 05:10:00 PDT")),
+
+              "#sec4_talk1_start" : new Date(Date.parse("24 Oct 2022 05:40:00 PDT")),
+              "#sec4_talk1_end": new Date(Date.parse("24 Oct 2022 06:10:00 PDT")),
+
+              "#sec4_talk2_start" : new Date(Date.parse("24 Oct 2022 06:15:00 PDT")),
+              "#sec4_talk2_end": new Date(Date.parse("24 Oct 2022 06:45:00 PDT")),
+
+              "#intro_start" : new Date(Date.parse("23 Oct 2022 23:00:00 PDT")),
+              "#intro_end" : new Date(Date.parse("23 Oct 2022 23:10:00 PDT")),
+              
+              "#coffeebreak_start" : new Date(Date.parse("24 Oct 2022 00:50:00 PDT")),
+              "#coffeebreak_end" : new Date(Date.parse("24 Oct 2022 01:00:00 PDT")),
+              
+              "#lunchbreak_start" : new Date(Date.parse("24 Oct 2022 02:40:00 PDT")),
+              "#lunchbreak_end" : new Date(Date.parse("24 Oct 2022 03:10:00 PDT")),
+              
+              "#postertalk_start" : new Date(Date.parse("24 Oct 2022 03:10:00 PDT")),
+              "#postertalk_end" : new Date(Date.parse("24 Oct 2022 03:30:00 PDT")),
+
+              "#poster_start" : new Date(Date.parse("24 Oct 2022 05:10:00 PDT")),
+              "#poster_end" : new Date(Date.parse("24 Oct 2022 05:40:00 PDT")),
+
+              "#panel_start" : new Date(Date.parse("24 Oct 2022 06:50:00 PDT")),
+              "#panel_end" : new Date(Date.parse("24 Oct 2022 07:30:00 PDT")),
+            }
+            blocks = {
+            }
+            var keys = Object.keys(schedule)
+            for (var i = 0; i < keys.length; ++i) {
+              $(keys[i]).html(schedule[keys[i]].toLocaleString(navigator.language, options))
+            }
+            var keys = Object.keys(blocks)
+            for (var i = 0; i < keys.length; ++i) {
+              $(keys[i]).html("<b>" + blocks[keys[i]].toLocaleString(navigator.language, block_options) + "</b>")
+            }
+          }
+          $('select').timezones();
+          $('select').change(function() {
+            setTimezone($('select').val())
+          });
+          $(document).ready(function() {
+            setTimezone($('select').val())
+          })
+      </script>
+
+
+<p>
+<ul>
+<li>
+    Here is <a href="https://live.allintheloop.net/App/ortra/ortraECCV2022" target="_blank">the ECCV Platform</a>.
+</li>
+<li>
+    Please log in using your ECCV credentials, click "Workshops", then "Oct 24", find our workshop and click "Join Now".
+</li>
+</ul>
+</p>
+
+
+<table class="schedule" id="program">
+  <tr class="row_type_tt">
+    <td width="80px">
+	    <b style="color:white;">Start</b>
+    </td>
+    <td width="80px">
+	   <b style="color:white;">End</b>
+    </td>
+    <td>
+	    <b style="color:white;">Event</b>
+    </td>
+  </tr>
+  
+  <tr class="row_type_C">
+    <td id="intro_start"></td>
+    <td id="intro_end"></td>
+    <td>
+        <p class="poster_title">Welcome and Introductions</p>
+        Workshop Organizers (Kaichun Mo and Jiayuan Gu)
+    </td>
+  </tr>
+
+  <tr class="row_type_B">
+    <td id="sec1_talk1_start"></td>
+    <td id="sec1_talk1_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://www.cis.upenn.edu/~kostas/" target="_blank"> <img alt src="data/kostas.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">Equivariance: from Objects to Scenes</p><br>
+            Kostas Daniilidis (UPenn)</td></tr></table>
+    </td>
+  </tr>
+ 
+  <tr class="row_type_A">
+    <td id="sec1_talk2_start"></td>
+    <td id="sec1_talk2_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/" target="_blank"> <img alt src="data/niloy.jpg" height="140"/></a></td>
+                <td style="border:none;width:80%"><p class="poster_title">Interacting with Neural Assets</p><br>
+            Niloy Mitra (UCL &#38; Adobe)</td></tr></table>
+    </td>
+  </tr>
+ 
+ <tr class="row_type_B">
+    <td id="sec1_talk3_start"></td>
+    <td id="sec1_talk3_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://cogtoolslab.github.io/" target="_blank"> <img alt src="data/judith.jpg" height="140"/></a></td>
+                <td style="border:none;width:80%"><p class="poster_title">Physion: Evaluating Physical Prediction <br> from Vision in Humans and Machines</p><br>
+            Judith Fan (UC San Diego)</td></tr></table>
+    </td>
+  </tr>
+
+  <tr class="row_type_D">
+    <td id="coffeebreak_start"></td>
+    <td id="coffeebreak_end"></td>
+    <td>
+        <p class="poster_title">Coffee Break</p>
+    </td>
+  </tr>
+  
+ <tr class="row_type_B">
+    <td id="sec2_talk1_start"></td>
+    <td id="sec2_talk1_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://tkipf.github.io/" target="_blank"> <img alt src="data/thomas.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Slot Attention: Object Discovery in Images and Videos
+           </p><br>
+            Thomas Kipf (Google Brain)
+        </td></tr></table>
+    </td>
+  </tr>
+
+
+  <tr class="row_type_A">
+    <td id="sec2_talk2_start"></td>
+    <td id="sec2_talk2_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="http://qwlouse.github.io/" target="_blank"> <img alt src="data/klaus.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Objects in 3D Scenes
+           </p><br>
+            Klaus Greff (Google Brain)
+        </td></tr></table>
+    </td>
+  </tr>
+ 
+  <tr class="row_type_B">
+    <td id="sec2_talk3_start"></td>
+    <td id="sec2_talk3_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="http://web.cs.ucla.edu/~soatto/" target="_blank"> <img alt src="data/stefano.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Emergence of Object Representation from Environmental Interaction
+           </p><br>
+            Stefano Soatto (UC Los Angeles &#38; Amazon)
+        </td></tr></table>
+    </td>
+  </tr>
+ 
+  
+  <tr class="row_type_D">
+    <td id="lunchbreak_start"></td>
+    <td id="lunchbreak_end"></td>
+    <td>
+        <p class="poster_title">Lunch Break</p>
+    </td>
+  </tr>
+  
+
+  <tr class="row_type_F">
+    <td id="postertalk_start"></td>
+    <td id="postertalk_end"></td>
+    <td>
+        <p class="poster_title">Accepted Paper Spotlight Talks</p>
+    </td>
+  </tr>
+ 
+  <tr class="row_type_B">
+    <td id="sec3_talk1_start"></td>
+    <td id="sec3_talk1_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://sungjinahn.com/" target="_blank"> <img alt src="data/sungjin.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Towards Structured Slots
+           </p><br>
+           Sungjin Ahn (KAIST)
+        </td></tr></table>
+    </td>
+  </tr>
+
+
+  <tr class="row_type_A">
+    <td id="sec3_talk2_start"></td>
+    <td id="sec3_talk2_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://chrisdxie.github.io/" target="_blank"> <img alt src="data/chris.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Segmenting Unseen Objects for Robot Manipulation
+           </p><br>
+           Christopher Xie (Meta)
+        </td></tr></table>
+    </td>
+  </tr>
+ 
+  <tr class="row_type_B">
+    <td id="sec3_talk3_start"></td>
+    <td id="sec3_talk3_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://web.stanford.edu/~bohg/" target="_blank"> <img alt src="data/jean.png" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Object Perception through Interaction
+           </p><br>
+            Jeannette Bohg (Stanford)
+        </td></tr></table>
+    </td>
+  </tr>
+ 
+    <tr class="row_type_F">
+     <td id="poster_start"></td>
+     <td id="poster_end"></td>
+     <td>
+         <p class="poster_title">Accepted Paper Poster Session</p>
+         <p><a href="https://app.gather.town/app/zDHzSsCHaRrEvEq4/ECCV%20VOLI%20Workshop" target="_blank">[GatherTown]</a>
+         <a href="./gathertown_instruction.pdf" target="_blank">[Instructions]</a></p>
+     </td>
+    </tr>
+
+ <tr class="row_type_B">
+    <td id="sec4_talk1_start"></td>
+    <td id="sec4_talk1_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://cseweb.ucsd.edu/~haosu/" target="_blank"> <img alt src="data/hao.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            Learning Generic and Generalizable Object Manipulation Skills from Vision with ManiSkill2
+           </p><br>
+           Hao Su (US San Diego)
+        </td></tr></table>
+    </td>
+  </tr>
+
+
+  <tr class="row_type_A">
+    <td id="sec4_talk2_start"></td>
+    <td id="sec4_talk2_end"></td>
+    <td>
+        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://yzhu.io/" target="_blank"> <img alt src="data/yixin.jpg" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">
+            From Human-Scene Interaction to Human-Machine Teaming
+           </p><br>
+            Yixin Zhu (Peking Univ.)
+        </td></tr></table>
+    </td>
+  </tr>
+ 
+  <tr class="row_type_E">
+    <td id="panel_start"></td>
+    <td id="panel_end"></td>
+    <td>
+        <p class="poster_title">Panel Discussion</p>
+        Host: Yanchao Yang, Shubham Tulsiani<br/>
+        Panelists: XXX
+    </td>
+  </tr>
+  
+
+</table>
+
+</p>
+
+<h2 id="contact">Contact Info</h2>
+<p>E-mail: 
+<a href="mailto:kaichun@cs.stanford.edu" target="_blank">kaichun@cs.stanford.edu</a>
+</p>
+
+<h2 id="contact">Acknowledgements</h2>
+<p>Website template borrowed from: 
+<a href="https://futurecv.github.io/" target="_blank">https://futurecv.github.io/</a>
+(Thanks to <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a>)
+</p>
+
+<div style="clear: both;">&nbsp;</div>
+</div><br><br>
+
+</body>
+</html>
