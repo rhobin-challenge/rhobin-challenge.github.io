@@ -1,7 +1,7 @@
 * {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family:  Helvetica, sans-serif;
 }
-
+/* "Trebuchet MS", Arial, */
 ul.program li {
     font-size: 17px;
     padding: 5px;
@@ -17,7 +17,7 @@ body {
     margin: 30px 0;
     padding: 0;
     background: #EFEFEF;
-    font-size: 12px;
+    font-size: 16px;
     color: #6B6B6B;
 }
 
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 p, ol, ul, blockquote {
@@ -305,7 +305,7 @@ span.hidden {
 
 
 button {
-    background-color: #004e79;
+    background-color: #ac7022;
     margin: 0 auto;
     border: none;
     color: white;
@@ -317,7 +317,7 @@ button {
     font-size: 14px;
 }
 button:hover {
-    background-color: #00649b;
+    background-color: #ac7022;
 }
 
 #myBtn {
@@ -329,7 +329,7 @@ button:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #cb831d;
+    background-color: #ac7022;
     color: white;
     cursor: pointer;
     padding: 15px;
