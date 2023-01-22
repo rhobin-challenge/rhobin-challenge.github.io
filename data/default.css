@@ -12,6 +12,15 @@ ul#pc li {
     padding: 2px;
     color: #666666;
 }
+.my-image-box {
+    object-position: 50% 50%;
+    /* float: center; */
+}
+
+.my-image-box img {
+    display: block;
+    /* width: 100%; */
+}
 
 body {
     margin: 30px 0;
