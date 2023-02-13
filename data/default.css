@@ -308,6 +308,13 @@ p.poster_title {
     color: #000;
 }
 
+p.poster_abstract {
+    font-size: 8px;
+    text-align: left;
+    color: #222222;
+    line-height: 0.2em;
+}
+
 span.hidden {
     display: none;
 } 
