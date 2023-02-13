@@ -309,10 +309,10 @@ p.poster_title {
 }
 
 p.poster_abstract {
-    font-size: 8px;
+    font-size: 14px;
     text-align: left;
     color: #222222;
-    line-height: 0.2em;
+    line-height: 1.3em;
 }
 
 span.hidden {
