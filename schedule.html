@@ -67,76 +67,42 @@ function topFunction() {
 
 <div id="content">
   <div id="tz_select">
-     <p><h2 style="color:rgb(188, 131, 9);">Select your time zone<br>Default: Vancouver Time (PST)</h2></p>
+     <p><h2 style="color:rgb(188, 131, 9);">Vancouver Time (PST)</h2></p>
     <select class="form-control"></select>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./tz_selector/timezones.full.js"></script>
         <script>
           function setTimezone(tz) {
-            options = {
-              timeZone: tz, 
-              month: 'short',
-              day: 'numeric',
-              hour: '2-digit', 
-              minute: '2-digit' 
-            }
-            block_options = {
-              timeZone: tz, 
-              month: 'short',
-              day: 'numeric',
-              hour: '2-digit', 
-              minute: '2-digit' 
-            }
+            
             schedule = {
-              "#sec1_talk1_start" : new Date(Date.parse("19 June 2023 09:00:00 PST")),
-              "#sec1_talk1_end": new Date(Date.parse("19 June 2023 09:30:00 PST")),
+              "#sec1_talk1_start" : new Date(Date.parse("19 June 2023 08:30:00 PST")),
+              "#sec1_talk1_end": new Date(Date.parse("19 June 2023 09:00:00 PST")),
 
-              "#sec1_talk2_start" : new Date(Date.parse("19 June 2023 09:30:00 PST")),
-              "#sec1_talk2_end": new Date(Date.parse("19 June 2023 10:00:00 PST")),
+              "#sec1_talk2_start" : new Date(Date.parse("19 June 2023 09:00:00 PST")),
+              "#sec1_talk2_end": new Date(Date.parse("19 June 2023 09:30:00 PST")),
 
-              "#sec1_talk3_start" : new Date(Date.parse("19 June 2023 10:00:00 PST")),
-              "#sec1_talk3_end": new Date(Date.parse("19 June 2023 10:30:00 PST")),
+              "#sec1_talk3_start" : new Date(Date.parse("19 June 2023 09:30:00 PST")),
+              "#sec1_talk3_end": new Date(Date.parse("19 June 2023 10:00:00 PST")),
 
-              "#sec2_talk1_start" : new Date(Date.parse("19 June 2023 11:00:00 PST")),
-              "#sec2_talk1_end": new Date(Date.parse("19 June 2023 11:30:00 PST")),
+              "#sec2_talk1_start" : new Date(Date.parse("19 June 2023 10:00:00 PST")),
+              "#sec2_talk1_end": new Date(Date.parse("19 June 2023 10:30:00 PST")),
 
-              "#sec2_talk2_start" : new Date(Date.parse("19 June 2023 11:30:00 PST")),
-              "#sec2_talk2_end": new Date(Date.parse("19 June 2023 12:00:00 PST")),
+              "#sec2_talk2_start" : new Date(Date.parse("19 June 2023 10:30:00 PST")),
+              "#sec2_talk2_end": new Date(Date.parse("19 June 2023 11:00:00 PST")),
 
-              "#sec2_talk3_start" : new Date(Date.parse("19 June 2023 12:00:00 PST")),
-              "#sec2_talk3_end": new Date(Date.parse("19 June 2023 12:30:00 PST")),
+              "#sec2_talk3_start" : new Date(Date.parse("19 June 2023 11:00:00 PST")),
+              "#sec2_talk3_end": new Date(Date.parse("19 June 2023 11:30:00 PST")),
               
-              "#intro_start" : new Date(Date.parse("19 June 2023 08:50:00 PST")),
-              "#intro_end" : new Date(Date.parse("19 June 2023 09:00:00 PST")),
+              "#intro_start" : new Date(Date.parse("19 June 2023 08:20:00 PST")),
+              "#intro_end" : new Date(Date.parse("19 June 2023 08:30:00 PST")),
               
-              "#closing_start" : new Date(Date.parse("19 June 2023 12:50:00 PST")),
-              "#closing_end" : new Date(Date.parse("19 June 2023 13:00:00 PST")),
+              "#coffeebreak_start" : new Date(Date.parse("19 June 2023 11:30:00 PST")),
+              "#coffeebreak_end" : new Date(Date.parse("19 June 2023 12:00:00 PST")),
               
-              "#coffeebreak_start" : new Date(Date.parse("19 June 2023 10:30:00 PST")),
-              "#coffeebreak_end" : new Date(Date.parse("19 June 2023 11:00:00 PST")),
-              
-              "#panel_start" : new Date(Date.parse("19 June 2023 12:30:00 PST")),
-              "#panel_end" : new Date(Date.parse("19 June 2023 12:50:00 PST")),
-            }
-            blocks = {
-            }
-            var keys = Object.keys(schedule)
-            for (var i = 0; i < keys.length; ++i) {
-              $(keys[i]).html(schedule[keys[i]].toLocaleString(navigator.language, options))
-            }
-            var keys = Object.keys(blocks)
-            for (var i = 0; i < keys.length; ++i) {
-              $(keys[i]).html("<b>" + blocks[keys[i]].toLocaleString(navigator.language, block_options) + "</b>")
+              "#panel_start" : new Date(Date.parse("19 June 2023 12:00:00 PST")),
+              "#panel_end" : new Date(Date.parse("19 June 2023 12:30:00 PST")),
             }
           }
-          $('select').timezones();
-          $('select').change(function() {
-            setTimezone($('select').val())
-          });
-          $(document).ready(function() {
-            setTimezone($('select').val())
-          })
       </script>
 
 
@@ -207,8 +173,12 @@ function topFunction() {
     <td id="sec1_talk2_start"></td>
     <td id="sec1_talk2_end"></td>
     <td>
-        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="website" target="_blank"> <img alt src="data/" height="140"/></a></td>
-                <td style="border:none;width:80%"><p class="poster_title">Keynote 2</p><br></td></tr></table>
+      <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://people.ciirc.cvut.cz/~sivic" target="_blank"> <img alt src="data/josef_sivic.jpg" height="140"/></a>Josef Sivicr<br>(CIIRC, CTU)</td>
+        <td style="border:none;width:80%"><p class="poster_title">Learning manipulation skills from instructional videos</p>
+          <p class="poster_abstract">
+            People easily learn how to change a flat tire of a car or perform resuscitation by observing other people doing the same task, for example, in an instructional video. This involves advanced visual intelligence abilities such as interpreting sequences of human actions that manipulate objects to achieve a specific task. Currently, however, there is no artificial system with a similar level of cognitive visual competence. In this talk, I will describe our recent progress on learning from instructional videos. In the first part, I will focus on learning video and language representations from the input videos and transcribed narrations. In the second part, I will focus on learning from instructional videos about how people manipulate objects and demonstrate transferring the learned skill to a robotic manipulator.
+          </p>
+          </td></tr></table>
     </td>
   </tr>
  
@@ -217,7 +187,7 @@ function topFunction() {
     <td id="sec1_talk3_end"></td>
     <td>
         <table style="width:100%"><tr><td style="border:none;width:20%"><a href="" target="_blank"> <img alt src="data/" height="140"/></a></td>
-                <td style="border:none;width:80%"><p class="poster_title">Presentations of the Rhobin challenge results given by the winners<br></td></tr></table>
+                <td style="border:none;width:80%"><p class="poster_title">Presentations of the Rhobin Challenge results given by the winners<br></td></tr></table>
     </td>
   </tr>
 
@@ -235,10 +205,13 @@ function topFunction() {
     <td id="sec2_talk1_start"></td>
     <td id="sec2_talk1_end"></td>
     <td>
-        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://tkipf.github.io/" target="_blank"> <img alt src="data/thomas.jpg" height="140"/></a></td>
-        <td style="border:none;width:80%"><p class="poster_title">
-            Keynote 3
-        </td></tr></table>
+      <table style="width:100%"><tr><td style="border:none;width:20%"><a href="https://www.cs.utexas.edu/users/grauman/" target="_blank"> <img alt src="data/grauman.jpg" height="140"/></a>Kristen Grauman<br>(ETH, Zurich)</td>
+        <td style="border:none;width:80%"><p class="poster_title">Title</p>
+          <p class="poster_abstract">
+            
+        </p>
+          </td></tr></table>
+
     </td>
   </tr>
 
@@ -247,10 +220,11 @@ function topFunction() {
     <td id="sec2_talk2_start"></td>
     <td id="sec2_talk2_end"></td>
     <td>
-        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="http://qwlouse.github.io/" target="_blank"> <img alt src="data/klaus.jpg" height="140"/></a></td>
-        <td style="border:none;width:80%"><p class="poster_title">
-            Keynote 4
-           </p><br>
+      <table style="width:100%"><tr><td style="border:none;width:20%"><a href="http://persci.mit.edu/people/adelson" target="_blank"> <img alt src="data/ted-adelson.png" height="140"/></a>Edward H. Adelson<br>(MIT)</td>
+        <td style="border:none;width:80%"><p class="poster_title">Synthesizing human motions in 3D scenes. </p>
+          <p class="poster_abstract">
+          </p>
+          </td></tr></table>
             
         </td></tr></table>
     </td>
@@ -260,35 +234,14 @@ function topFunction() {
     <td id="sec2_talk3_start"></td>
     <td id="sec2_talk3_end"></td>
     <td>
-        <table style="width:100%"><tr><td style="border:none;width:20%"><a href="http://web.cs.ucla.edu/~soatto/" target="_blank"> <img alt src="data/stefano.jpg" height="140"/></a></td>
-        <td style="border:none;width:80%"><p class="poster_title">
-            Keynote 5
-           </p><br>
-            
-        </td></tr></table>
+      <table style="width:100%"><tr><td style="border:none;width:20%"><a href="" target="_blank"> <img alt src="data/" height="140"/></a></td>
+        <td style="border:none;width:80%"><p class="poster_title">Accepted Papers Talks<br></td></tr></table>
+
+
     </td>
   </tr> 
  
  
-  <tr class="row_type_E">
-    <td id="panel_start"></td>
-    <td id="panel_end"></td>
-    <td>
-        <p class="poster_title">Panel Discussion</p>
-        Host: <br/>
-        Panelists: XXX
-    </td>
-  </tr>
-  
-  <tr class="row_type_C">
-    <td id="closing_start"></td>
-    <td id="closing_end"></td>
-    <td>
-        <p class="poster_title">Closing Remarks</p>
-        Workshop Organizers 
-    </td>
-  </tr>
-
 </table>
 
 <h2 id="contact">Contact Info</h2>
