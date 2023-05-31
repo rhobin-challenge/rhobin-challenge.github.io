@@ -96,11 +96,11 @@ function topFunction() {
 <h2>Challenge Winners</h2>
 <table>
     <tr class="row_type_A">
-        <td width="100px" , class="task_id"> 3D human reconstruction </td>
+        <td width="100px" , class="paper_id"> 3D human reconstruction </td>
         <td width="200px">
             <div style="text-align: center;">
                 <strong><span class="author">
-                    TEAM
+                    GOD-HAO
                 </span></strong>
             </div>
             <div style="text-align: center;">
@@ -108,8 +108,6 @@ function topFunction() {
                 <a href="https://youtu.be/" target="_blank">[Video]</a> -->
             </div>
         </td>
-
-
         <td id="3dhps">
             <p class="poster_title">
             </p>
@@ -121,42 +119,34 @@ function topFunction() {
         <td width="200px">
             <div style="text-align: center;">
                 <strong><span class="author">
-                    TEAM </span></strong>
+                    igod </span></strong>
             </div>
             <div style="text-align: center;">
                 <!-- <a href="" target="_blank">[PDF]</a>
                 <a href="https://youtu.be/" target="_blank">[Video]</a> -->
             </div>
         </td>
-        <td id="paper3">
-            <p class="poster_title">
-        </td>
     </tr>
      
 
-    <tr class="row_type_B">
+    <tr class="row_type_A">
         <td width="20px" , class="paper_id">Joint reconstruction of human and object</td>
         <td width="200px">
             <div style="text-align: center;">
                 <strong><span class="author">
-                    TEAM
+                    HyeongjinNam
                 </div>
             <div style="text-align: center;">
                 <!-- <a href="" target="_blank">[PDF]</a>
                 <a href="https://youtu.be/" target="_blank">[Video]</a> -->
             </div>
         </td>
-        <td id="paper3">
+        <td id="hoi">
             <p class="poster_title">
         </td>
     </tr>
      
 </table>
-
-
-
-
-
             <h2>Paper Presentations</h2>
             <table>
                 <tr class="row_type_A">
@@ -173,18 +163,17 @@ function topFunction() {
                     </td>
 
 
-                    <td id="paper2">
+                    <td id="paper1">
                         <p class="poster_title">
                              DeepRM: Deep Recurrent Matching for 6D Pose Refinement 
                         </p>
                         <span class="hidden">
-                            <p><strong>Abstract:
+                            <p><strong>Abstract:</strong>
                                 Precise 6D pose estimation of rigid objects from RGB images is a critical but challenging task in robotics, augmented reality and human-computer interaction. To address this problem, we propose DeepRM, a novel recurrent network architecture for 6D pose refinement. DeepRM leverages initial coarse pose estimates to render synthetic images of target objects. The rendered images are then matched with the observed images to predict a rigid transform for updating the previous pose estimate. This process is repeated to incrementally refine the estimate at each iteration. The DeepRM architecture incorporates LSTM units to propagate information through each refinement step, significantly improving overall performance. In contrast to current 2-stage Perspective-n-Point based solutions, DeepRM is trained end-to-end, and uses a scalable backbone that can be tuned via a single parameter for accuracy and efficiency. During training, a multi-scale optical flow head is added to predict the optical flow between the observed and synthetic images. Optical flow prediction stabilizes the training process, and enforces the learning of features that are relevant to the task of pose estimation. Our results demonstrate that DeepRM achieves state-of-the-art performance on two widely accepted challenging datasets.
-                            </strong>
                             </p>
                         </span>
                         <div style="text-align: center;">
-                            <button onclick="moreOrLess($('#paper2'))">Show Abstract</button>
+                            <button onclick="moreOrLess($('#paper1'))">Show Abstract</button>
                         </div>
                     </td>
                 </tr>
@@ -201,7 +190,7 @@ function topFunction() {
                             <a href="https://youtu.be/" target="_blank">[Video]</a>
                         </div>
                     </td>
-                    <td id="paper3">
+                    <td id="paper2">
                         <p class="poster_title">
                             KBody: Towards general, robust, and aligned monocular whole-body estimation                         </p>
                         <span class="hidden">
@@ -210,7 +199,7 @@ function topFunction() {
                             </p>
                         </span>
                         <div style="text-align: center;">
-                            <button onclick="moreOrLess($('#paper3'))">Show Abstract</button>
+                            <button onclick="moreOrLess($('#paper2'))">Show Abstract</button>
                         </div>
                     </td>
                 </tr>
@@ -230,7 +219,7 @@ function topFunction() {
                     </td>
                     <td id="paper3">
                         <p class="poster_title">
-                            Pretrained Pixel-Aligned Reference Network for 3D Human Reconstruction                         </p>
+                            Pretrained Pixel-Aligned Reference Network for 3D Human Reconstruction</p>
                         <span class="hidden">
                             <p><strong>Abstract:</strong>
                                 We propose the Pretrained Pixel-aligned Reference (PPR) network for 3D human reconstruction. The PPR network utilizes a pretrained model embedded with a reference mesh surface and full-view normals to better constrain spatial query processing, leading to improved mesh surface reconstruction. Our network consists of a dual-path encoder and a query network. The dual-path encoder extracts front-back view features from the input image through one path, and full-view reference features from a pretrained model through the other path. These features, along with additional spatial traits, are concatenated and processed by the query network to estimate the desired mesh surface. During training, we consider points on the pretrained model as well as around the ground-truth mesh surfaces, enabling the implicit function to better capture the mesh surface and overall posture. We evaluate the performance of our approach through experiments on the THuman 2.0 and RenderPeople datasets, and compare it with state-of-the-art methods.
@@ -241,12 +230,6 @@ function topFunction() {
                         </div>
                     </td>
                 </tr>
-                 
-
-
-                
-
-
             </table>
 
 
