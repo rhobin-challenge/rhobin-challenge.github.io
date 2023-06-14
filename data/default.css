@@ -17,6 +17,17 @@ ul#pc li {
     /* float: center; */
 }
 
+.my-image-box-header {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .my-image-box-header img {
+    margin: 10px; /* Optional: Add some spacing between the images */
+  }
+
 .my-image-box img {
     display: block;
     /* width: 100%; */
