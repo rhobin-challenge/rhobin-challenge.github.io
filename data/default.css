@@ -63,7 +63,7 @@ p, ol, ul, blockquote {
 }
 
 a {
-    color: #cb831d;
+    color: #1da5cb;
 }
 
 a:hover {
@@ -170,12 +170,12 @@ img {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    background-color: #cb831d;
+    background-color: #1da5cb;
     padding: 8px 8px;
     border-radius: 8px;
 }
 #menu a:hover{
-	background-color: #caa46d;
+	background-color: #30abce;
 }
 
 #menu .first a {
@@ -265,7 +265,7 @@ table#program td:nth-child(1) {
     width: 110px;
 } */
 tr.row_type_tt {
-	background-color: #cb831d;
+	background-color: #1da5cb;
 }
 tr.row_type_A {
 	background-color: #EEE;
@@ -280,7 +280,7 @@ tr.row_type_D {
 	background-color: #9FC2CC;
 }
 tr.row_type_E {
-	background-color: #ca9e60;
+	background-color: #30abce;
 }
 tr.row_type_F {
 	background-color: #CAD5CA;
@@ -332,7 +332,7 @@ span.hidden {
 
 
 button {
-    background-color: #ac7022;
+    background-color: #1da5cb;
     margin: 0 auto;
     border: none;
     color: white;
@@ -344,7 +344,7 @@ button {
     font-size: 14px;
 }
 button:hover {
-    background-color: #ac7022;
+    background-color: #1da5cb;
 }
 
 #myBtn {
@@ -356,7 +356,7 @@ button:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #ac7022;
+    background-color: #1da5cb;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -364,5 +364,5 @@ button:hover {
 }
 
 #myBtn:hover {
-    background-color: #daa65e;
+    background-color: #1da5cb;
 }
