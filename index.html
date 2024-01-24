@@ -15,7 +15,7 @@
       <div id="logo">
 	<h1>
 		<center>
-	    	 <span style="font-size:50%;color:#777;font-weight:normal">The first Workshop on</span><br>
+	    	 <span style="font-size:50%;color:#777;font-weight:normal">The second Workshop on</span><br>
              Reconstruction of Human-Object Interactions (RHOBIN)
              
 		</center>
@@ -28,7 +28,7 @@
   </div>
   <h2>
     <center>
-      <span style="font-size:92%;color:#777;font-weight:normal">June 19 @ 
+      <span style="font-size:92%;color:#777;font-weight:normal">June 18 @ 
           <a href="https://cvpr2024.thecvf.com/" target="_blank">CVPR 2024</a> 
       <!-- <span style="font-size:92%;color:#777;font-weight:bold">In Person</span><br> -->
       <!-- <span style="font-size:130%;color:#777;font-weight:bold">East 18@Vancouver Convention Center</span>       -->
@@ -41,8 +41,9 @@
       <ul>
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="./schedule.html" accesskey="2">Schedule</a></li>
-        <li><a href="./papers.html" accesskey="3">Papers & Winners</a></li>
+        <!-- <li><a href="./papers.html" accesskey="3">Papers & Winners</a></li> -->
         <li><a href="#contact">Contact</a></li>
+        <li><a href="./cvpr23/index.html" accesskey="3">1<sup>st</sup> RHOBIN @ CVPR'23</a></li>
       </ul>
     </center>
 </div>
@@ -86,23 +87,24 @@ function topFunction() {
 
 <h2>Introduction</h2>
 <p>
-This half-day workshop will provide a venue to present and discuss state-of-the-art research in
-the reconstruction of human-object interactions from images. The focus will be on recent
-developments in human-object interaction learning and its impact on 3D scene parsing, building
-human-centric robotic assistants, and the general understanding of human behaviors.
+  Following the success of the first Rhobin workshop at CVPR'23, this second half-day Rhobin workshop 
+  will continue providing a venue to present and discuss state-of-the-art research in the reconstruction 
+  of human-object interactions from images. The focus of this second workshop will go beyond image-based 
+  interaction reconstruction, extend to interaction tracking over time,  and seek connections to relevant 
+  topics such as egocentric vision and dynamic scene interactions. The second Rhobin challenge will feature
+  five tracks in total with two new tasks on human-object interaction tracking and image-based contact 
+  estimation, using two new datasets InterCap and DAMON along with BEHAVE.  
 </p>
 <p>
-Humans are an essential component of the interaction. Hence, it is crucial to estimate the
-human pose, shape, and motion as well as objects that are being interacted with accurately to
-achieve a realistic interaction. 3D Human Pose and Motion estimation from images or videos
-have attracted a lot of interest. However, in most cases, the task does not explicitly involve
-objects and the interaction with them. Whether it is 2D detection and/or monocular 3D
-reconstruction, objects and humans have been studied separately. Humans are in constant
-contact with the world as they move through it and interact with it. Considering the interaction
-between them can marry the best of both worlds.
+  Humans are in constant contact with the world as they move through it and interact with it. To better 
+  understand how humans interact with the world, it is crucial to estimate human poses, shapes, and movements. 
+  3D Human Pose and Motion estimation from images or videos has attracted a lot of interest. However, in most 
+  cases, the task does not explicitly involve objects and the interaction with them. Whether it is 2D detection 
+  and/or monocular 3D reconstruction, objects and humans have been mostly studied separately. Considering the 
+  interaction between them can marry the best of both worlds. 
 </p>
 
-  <p>Participation details of the <b>Rhobin Challenge</b> can be found below and paper submission can be found below.
+  <p>Participation details of the <b>Rhobin Challenge</b> and <b>paper submission</b> can be found below.
   </p>
 	
 <h2 id="speakers">Invited Speakers (Check out the <a href="./schedule.html">Full Schedule</a>)</h2>
@@ -112,32 +114,32 @@ between them can marry the best of both worlds.
 <p>
 
 <tr>
-<td><center><a href="http://people.ciirc.cvut.cz/~sivic/" target="_blank"> <img alt src="data/josef_sivic.jpg" height="170"/> </a></center> </td>
-<td><center><a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" target="_blank"><img alt src="data/siyu.jpeg" height="170"/> </a></center> </td>
-<td><center><a href="https://tsattler.github.io/" target="_blank"><img alt src="data/Torsten_profile_small.jpg" height="170"/> </a></center></td>
+    <td colspan="2"><center><a href="http://www.cs.columbia.edu/~vondrick/" target="_blank"> <img alt src="data/carl_vondrick.jpg" height="170"/> </a></center> </td>
+    <td colspan="2"><center><a href="https://dimadamen.github.io/" target="_blank"><img alt src="data/dima_damen.jpg" height="170"/> </a></center> </td>
+    <td colspan="2"><center><a href="https://cs.nyu.edu/~fouhey/" target="_blank"><img alt src="data/david_fouhey.jpg" height="170"/> </a></center></td>
 </tr>
-    <tr>
-        <td> <center> <h3> Josef Sivic</h3> </center></td>
-        <td> <center> <h3> Siyu Tang</h3> </center></td>
-        <td> <center> <h3> Torsten Sattler</h3> </center></td>
-        </tr>
-        <tr>
-            <td> <center> <font size= "2">Czech Institute of Informatics, Robotics and Cybernetics (CIIRC)<br>Czech Technical University (CTU)</font></center> </td>
-            <td> <center> <font size= "2">ETH Zürich</font></center> </td>
-            <td> <center> <font size= "2">Czech Institute of Informatics, Robotics and Cybernetics (CIIRC)<br>Czech Technical University (CTU)</font></center> </td>
-        </tr>
+<tr>
+    <td colspan="2"> <center> <h3> Carl Vondrick </h3> </center></td>
+    <td colspan="2"> <center> <h3> Dima Damen </h3> </center></td>
+    <td colspan="2"> <center> <h3> David Fouhey </h3> </center></td>
+</tr>
+<tr>
+    <td colspan="2"> <center> <font size= "2">Columbia University</font></center> </td>
+    <td colspan="2"> <center> <font size= "2">University of Bristol<br>Google DeepMind</font></center> </td>
+    <td colspan="2"> <center> <font size= "2">New York University</font></center> </td>
+</tr>
 
-        <tr>
-<td><center><a href="https://www.cs.utexas.edu/users/grauman/" target="_blank"> <img alt src="data/grauman.jpg" height="170"/> </a></center> </td>
-    <td><center><a href="http://persci.mit.edu/people/adelson" target="_blank"> <img alt src="data/ted-adelson.png" height="170"/> </a></center> </td>
+<tr>
+    <td colspan="3"><center><a href="https://www.3dunderstanding.org/" target="_blank"> <img alt src="data/angela_dai.jpg" height="170"/> </a></center> </td>
+    <td colspan="3"><center><a href="https://ps.is.mpg.de/person/black" target="_blank"> <img alt src="data/michael_black.jpg" height="170"/> </a></center> </td>
 </tr>
-        <tr>
-        <td> <center> <h3> Kristen Grauman </h3> </center></td>
-        <td> <center> <h3> Edward H Adelson </h3> </center></td>
+<tr> 
+    <td colspan="3" > <center> <h3> Angela Dai  </h3> </center></td>
+    <td colspan="3" > <center> <h3> Michael Black </h3> </center></td>
 </tr>
-        <tr>
-<td> <center> <font size= "2">University of Texas Austin<br>Facebook AI Research (FAIR)</font></center> </td>
-            <td> <center> <font size= "2">Massachusetts Institute of Technology (MIT)</font></center> </td>
+<tr>
+    <td colspan="3"> <center> <font size= "2">Technical University of Munich</font></center> </td>
+    <td colspan="3"> <center> <font size= "2">Max Planck Institute for Intelligent Systems<br>Meshcapade</font></center> </td>
 </tr>
 <tr><td></td></tr>
 <tr><td></td></tr>
@@ -179,8 +181,8 @@ between them can marry the best of both worlds.
 <br>
   Submissions are anonymous and should not include any author names, affiliations, and contact information in the PDF.
   <ul>
-    <li>Online Submission System:  <a href="https://cmt3.research.microsoft.com/Rhobin2023/" target="_blank">https://cmt3.research.microsoft.com/</a></li>
-    <li>Submission Format: <a href="https://www.google.com/url?q=https://media.icml.cc/Conferences/CVPR2023/cvpr2023-author_kit-v1_1-1.zip&sa=D&source=docs&ust=1673735151815622&usg=AOvVaw1T9itdE1rib-vg4rowRwgr" target="_blank">official CVPR template</a>  (double column; no more than 8 pages, excluding reference).</li>
+    <li>Online Submission System:  <a href="https://cmt3.research.microsoft.com/Rhobin2024/" target="_blank">https://cmt3.research.microsoft.com/</a></li>
+    <li>Submission Format: <a href="https://github.com/cvpr-org/author-kit/releases/tag/CVPR2024-v2" target="_blank">official CVPR template</a>  (double column; no more than 8 pages, excluding reference).</li>
 
   </ul>
   If you have any questions, feel free to reach out to us.
@@ -188,74 +190,98 @@ between them can marry the best of both worlds.
  
   <h3>Timeline Table (11:59 PM, Pacific Time)</h3>
   <ul>
-      <li>Full-paper submission deadline: <del>March 9</del> <b>March 20,</b> 2023 </li>
-      <li>Notification to authors: <del>March 30</del> <b>April 3,</b> 2023</li>
-      <li>1-page Abstract submission deadline: <b>May 15,</b> 2023</li>
-      <li>Camera-ready deadline: <del>April 6</del> <b>April 10,</b> 2023</li>
-      <li>Workshop: June 19, 2023</li>
+      <li>Full-paper submission deadline: March 14, 2024 </li>
+      <li>Notification to authors: March 30, 2024</li>
+      <li>1-page Abstract submission deadline: May 15, 2024</li>
+      <li>Camera-ready deadline: April 10, 2024</li>
+      <li>Workshop: June 18, 2024</li>
     </ul>
 </p>
 
-<h2 id="cfp">The First Rhobin Challenge</h2>
-<p>Given the importance of human-object interaction, as also highlighted by this workshop, we propose a challenge on reconstructing 3D human and object from monocular RGB images, with a focus on images with close human object interactions. We have seen promising progress in reconstructing human body mesh or estimating 6DoF object pose from single images. However, most of these works focus on occlusion-free images which are not realistic for settings during close human-object interaction since humans and objects occlude each other. This makes inference more difficult and poses challenges to existing state-of-the-art methods. In this workshop, we want to examine how well the existing human and object reconstruction methods work under more realistic settings and more importantly, understand how they can benefit each other for accurate interaction reconstruction. The recently released BEHAVE dataset (CVPR'22), enables for the first time joint reasoning about human-object interactions in real settings. We will use the dataset and this workshop to sparkle research in human-object interaction modeling. We already have a publicly available baseline approach and evaluation protocols, CHORE Xie et al. ECCV'22 for the challenge. 
+<h2 id="cfp">The Second Rhobin Challenge</h2>
+<p>
+  Given the importance of human-object interaction, as also highlighted by this workshop, we 
+  propose a challenge on reconstructing 3D human and object and estimating 3D human-object 
+  and human-scene contact, from monocular RGB images. We have seen promising progress in 
+  reconstructing human body mesh or estimating 6DoF object pose from single images. However, 
+  most of these works focus on occlusion-free images which are not realistic for settings 
+  during close human-object interaction since humans and objects occlude each other. This 
+  makes inference more difficult and poses challenges to existing state-of-the-art methods. 
+  Similarly, methods estimating 3D contacts have also seen rapid progress, but are restricted 
+  to scanned or synthetic datasets, and struggle with generalization to in-the-wild scenarios.  
+  In this workshop, we want to examine how well the existing human and object reconstruction 
+  and contact estimation methods work under more realistic settings and more importantly, 
+  understand how they can benefit each other for accurate interaction reasoning. The recently 
+  released BEHAVE (CVPR'22), InterCap (GCPR’22) and DAMON (ICCV’23) datasets enable joint 
+  reasoning about human-object interactions in real settings and evaluating contact prediction 
+  in the wild. 
 </p>
-        <h3>Challenge website</h3>
-        <ul>
-        <li><a href="https://codalab.lisn.upsaclay.fr/competitions/9280" target="_blank">3D human reconstruction</a></li>
-        <li><a href="https://codalab.lisn.upsaclay.fr/competitions/9336" target="_blank">6DoF pose estimation of rigid objects</a></li>
-        <li><a href="https://codalab.lisn.upsaclay.fr/competitions/9337" target="_blank">Joint reconstruction of human and object</a></li>
-        </ul>
+<h3>Challenge website</h3>
+  <ul>
+    <li><a href="https://codalab.lisn.upsaclay.fr/competitions/" target="_blank">3D human reconstruction</a></li>
+    <li><a href="https://codalab.lisn.upsaclay.fr/competitions/" target="_blank">6DoF pose estimation of rigid objects</a></li>
+    <li><a href="https://codalab.lisn.upsaclay.fr/competitions/" target="_blank">Joint reconstruction of human and object</a></li>
+    <li><a href="https://codalab.lisn.upsaclay.fr/competitions/" target="_blank">Video-based tracking</a></li>
+    <li><a href="https://codalab.lisn.upsaclay.fr/competitions/" target="_blank">3D contact prediction from 2D images</a></li>
+  </ul>
+  
+<h3>Important dates</h3>
+<ul>
+    <li>Challenge open: <b>February 1 00:00, 2024 UTC</b></li>
+    <li>Submission deadline: <b>May 16 23:59, 2024 UTC</b></li>
+    <li>Winner award: June 18, 2024</li>
+    
+</ul>
 
-        <h3>Important dates</h3>
-        <ul>
-            <li>Challenge open: <b>February 1 00:00, 2023 UTC</b></li>
-            <li>Submission deadline: <b>May 16 23:59, 2023 UTC</b></li>
-            <li>Winner award: June 19, 2023</li>
-            
-          </ul>
-
-        <h2 id="organizers">Workshop Organizers</h2>
+<h2 id="organizers">Workshop Organizers</h2>
 <center>
 
 <table style="width:100%">
 <p>
 
 <tr>
-<td><center><a href="https://xiwang1212.github.io/homepage/" target="_blank"> <img alt src="data/xiwang.jpg" height="170"/> </a></center> </td>
-<td><center><a href="https://cs.stanford.edu/~kaichun/" target="_blank"><img alt src="data/kaichun.jpg" height="170"/> </a></center> </td>
-<td><center><a href="https://is.mpg.de/~nathanasiou" target="_blank"> <img alt src="data/nathanasiou.jpg" height="170"/> </a></center> </td>
+  <td colspan="2"><center><a href="https://xiwang1212.github.io/homepage/" target="_blank"> <img alt src="data/xiwang.jpg" height="170"/> </a></center> </td>
+  <td colspan="2"><center><a href="https://people.mpi-inf.mpg.de/~xxie/" target="_blank"> <img alt src="data/xianghui.png" height="170"/> </a></center> </td>
+  <td colspan="2"><center><a href="https://is.mpg.de/~nathanasiou" target="_blank"> <img alt src="data/nathanasiou.jpg" height="170"/> </a></center> </td>
 </tr>
 <tr>
-<td> <center> <h3> Xi Wang </h3> </center></td>
-<td> <center> <h3> Kaichun Mo </h3> </center></td>
-<td> <center> <h3> Nikos Athanasiou </h3> </center></td>
+  <td colspan="2"> <center> <h3> Xi Wang </h3> </center></td>
+  <td colspan="2"> <center> <h3> Xianghui Xie </h3> </center></td>
+  <td colspan="2"> <center> <h3> Nikos Athanasiou </h3> </center></td>
 </tr>
 <tr>
-<td> <center> <font size= "2">ETH, Zurich</font></center> </td>
-<td> <center> <font size= "2">NVIDIA Research, Seattle</font></center> </td>
-<td> <center> <font size= "2"> Max-Planck-Institute for Intelligen Systems, Tübingen</font></center> </td>
+  <td colspan="2"> <center> <font size= "2"> ETH, Zurich</font></center> </td>
+  <td colspan="2"> <center> <font size= "2"> Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
+  <td colspan="2"> <center> <font size= "2"> Max-Planck-Institute for Intelligen Systems, Tübingen</font></center> </td>
 </tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
 
 <tr>
-  <td><center><a href="https://research.adobe.com/person/paulchhuang/" target="_blank"> <img alt src="data/paulhuang.jpeg" height="170"/> </a></center> </td>
-  <td><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" target="_blank"> <img alt src="data/GPM_new_crop.png" height="170"/> </a></center> </td>
-  <td><center><a href="https://ait.ethz.ch/people/hilliges/" target="_blank"> <img alt src="data/otmarhilliges.jpg" height="170"/> </a></center> </td>
+  <td  colspan="2"><center><a href="https://cs.stanford.edu/~kaichun/" target="_blank"><img alt src="data/kaichun.jpg" height="170"/> </a></center> </td>
+  <td colspan="2"><center><a href="https://scholar.google.co.uk/citations?user=pZPD0hMAAAAJ&hl=en" target="_blank"> <img alt src="data/julien_valentin.jpg" height="170"/> </a></center> </td>
+  <td colspan="2"><center><a href="https://dtzionas.com/" target="_blank"> <img alt src="data/dmitrios_tzionas.jpg" height="170"/> </a></center> </td>
 </tr>
 <tr>
-<td> <center> <h3>  Chun-Hao (Paul) Huang </h3> </center></td>
-<td> <center> <h3> Gerard Pons-Moll</h3> </center></td>
-<td> <center> <h3> Otmar Hilliges  </h3> </center></td>
+  <td colspan="2"> <center> <h3> Kaichun Mo </h3> </center></td>
+  <td colspan="2"> <center> <h3> Julien Valentin </h3> </center></td>
+  <td colspan="2"> <center> <h3> Dimitrios Tzionas </h3> </center></td>
 </tr>
 <tr>
-<td> <center> <font size= "2"> Adobe, London </font></center> </td>
-<td> <center> <font size= "2"> University of Tübingen <br>Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
-<td> <center> <font size= "2"> ETH, Zurich</font></center> </td>
+  <td colspan="2"> <center> <font size= "2">NVIDIA Research, Seattle</font></center> </td>
+  <td colspan="2"> <center> <font size= "2"> Microsoft </font></center> </td>
+  <td colspan="2"> <center> <font size= "2"> University of Amsterdam </font></center> </td>
+</tr>
+
+<tr>
+  <td colspan="3"><center><a href="https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html" target="_blank"><img alt src="data/luc_van_gool.jpeg" height="170"/> </a></center> </td>
+  <td colspan="3"><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" target="_blank"> <img alt src="data/GPM_new_crop.png" height="170"/> </a></center> </td>
+</tr>
+<tr>
+  <td colspan="3"> <center> <h3> Luc Van Gool </h3> </center></td>
+  <td colspan="3"> <center> <h3> Gerard Pons-Moll</h3> </center></td>
+</tr>
+<tr>
+  <td colspan="3"> <center> <font size= "2"> ETH, Zurich</font></center> </td>
+  <td colspan="3"> <center> <font size= "2"> University of Tübingen <br>Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
 </tr>
 <tr><td></td></tr>
 <tr><td></td></tr>
@@ -275,19 +301,35 @@ between them can marry the best of both worlds.
 <p>
 
 <tr>
-<td><center><a href="https://people.mpi-inf.mpg.de/~xxie/" target="_blank"> <img alt src="data/xianghui.png" height="170"/> </a></center> </td>
-<td><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/Bhatnagar.html" target="_blank"> <img alt src="data/bhatnagar_cropped.jpg" height="170"/> </a></center> </td>
-<td><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" target="_blank"> <img alt src="data/GPM_new_crop.png" height="170"/> </a></center> </td>
+  <td><center><a href="https://people.mpi-inf.mpg.de/~xxie/" target="_blank"> <img alt src="data/xianghui.png" height="170"/> </a></center> </td>
+  <td><center><a href="https://sha2nkt.github.io/" target="_blank"> <img alt src="data/shashank.jpg" height="170"/> </a></center> </td>
+  <td><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/Petrov.html" target="_blank"> <img alt src="data/ilya.jpeg" height="170"/> </a></center> </td>
 </tr>
 <tr>
-<td> <center> <h3> Xianghui Xie </h3> </center></td>
-<td> <center> <h3> Bharat Lal Bhatnagar </h3> </center></td>
-<td> <center> <h3> Gerard Pons-Moll </h3> </center></td>
+  <td> <center> <h3> Xianghui Xie </h3> </center></td>
+  <td> <center> <h3> Shashank Tripathi </h3> </center></td>
+  <td> <center> <h3> Ilya A. Petrov </h3> </center></td>
 </tr>
 <tr>
-<td> <center> <font size= "2">Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
-<td> <center> <font size= "2">Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
-<td> <center> <font size= "2"> University of Tübingen <br>Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
+  <td> <center> <font size= "2">Max Planck Institute for Informatics, Saarland Informatics Campus </font></center> </td>
+  <td> <center> <font size= "2">Max-Planck-Institute for Intelligen Systems, Tübingen </font></center> </td>
+  <td> <center> <font size= "2"> University of Tübingen </font></center> </td>
+</tr>
+
+<tr>
+  <td><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/Bhatnagar.html" target="_blank"> <img alt src="data/bhatnagar.jpg" height="170"/> </a></center> </td>
+  <td><center><a href="https://dtzionas.com/" target="_blank"> <img alt src="data/dmitrios_tzionas.jpg" height="170"/> </a></center> </td>
+  <td><center><a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" target="_blank"> <img alt src="data/GPM_new_crop.png" height="170"/> </a></center> </td>
+</tr>
+<tr>
+  <td> <center> <h3> Bharat Lal Bhatnagar </h3> </center></td>
+  <td> <center> <h3> Dimitrios Tzionas </h3> </center></td>
+  <td> <center> <h3> Gerard Pons-Moll </h3> </center></td>
+</tr>
+<tr>
+  <td> <center> <font size= "2"> Meta Reality Labs </font></center> </td>
+  <td> <center> <font size= "2"> University of Amsterdam </font></center> </td>
+  <td> <center> <font size= "2"> University of Tübingen <br>Max Planck Institute for Informatics, Saarland Informatics Campus</font></center> </td>
 </tr>
 <tr><td></td></tr>
 <tr><td></td></tr>
@@ -303,23 +345,32 @@ between them can marry the best of both worlds.
 
 <h2 id="Committee Members">Committee Members</h2>
 <p>
-Berat Mert Albaba (ETH Zurich)<br>
-Hsuan-I Ho (ETH Zurich)<br>
-Markos Diomataris (Max Planck Institute for Intelligent Systems)<br>
-Dimitrije Antic (University of Amsterdam)<br>
-Ilya Petrov (University of Tuebingen)<br>
-Yi Li (University of Washington)<br>
-Yijia Weng (Stanford University)<br>
-Artur Grigorev (Samsung)<br>
-Keyang Zhou (University of Tuebingen)<br>
-Lea Mueller (Max Planck Institute for Intelligent Systems)<br>
-Chen Guo (ETH Zurich)<br>
-Xiaohan Zhang (University of Tuebingen, MPI Informatics)<br>
-Zijian Dong (ETH Zurich)<br>
-Aditya Sanghi (Autodesk, Autodesk AI Lab)<br>
-Alexey Gavryushin (ETH Zurich)<br>
-Yuxuan Xue (University of Tuebingen)<br>
-Zhenyu Chen (Technical University of Munich)<br>
+  Nikos Athanasiou, MPI Intelligent System, Germany <br>
+  Dimitrije Antic, University of Amsterdam, Netherlands <br>
+  Sammy Christen, ETH Zurich, Switzerland  <br>
+  Zicong Fan, ETH Zurich, Switzerland <br>
+  Bharat Lal Bhatnagar, Meta, Switzerland <br>
+  Otmar Hilliges, ETH Zurich, Switzerland <br>
+  Chun-Hao Paul Huang, Adobe London, UK <br>
+  Yannan He, University of Tübingen, Germany <br>
+  Jiaxi Jiang, ETH Zurich, Switzerland <br>
+  Chuqiao Li, University of Tübingen, Germany <br>
+  Kaichun Mo, NVIDIA, USA <br>
+  Ilya A. Petrov, University of Tübingen, Germany <br>
+  Gerard Pons-Moll, University of Tübingen and MPI, Germany <br>
+  Omid Taheri, MPI-IS, Germany <br>
+  Purva Tendulkar, Columbia University, USA <br>
+  Anh N. Thai, Georgia Tech, USA <br>
+  Shashank Tripathi, MPI Intelligent System, Germany <br>
+  Dimitrios Tzionas, University of Amsterdam, Netherlands <br>
+  Julien Valentin, Microsoft, Switzerland <br>
+  Luc Van Gool, ETH Zurich, Switzerland <br>
+  Xi Wang, ETH Zurich, Switzerland <br>
+  Xianghui Xie, MPI, Germany  <br>
+  Yuxuan Xue, University of Tübingen, Germany <br>
+  Xiaohan Zhang, University of Tübingen, Germany <br>
+  Keyang Zhou, University of Tübingen, Germany <br>
+  
 </p>
 
 <h3 id="contact">Contact Info</h2>
