@@ -170,12 +170,12 @@ img {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    background-color: #1da5cb;
+    background-color: #ae1dcb;
     padding: 8px 8px;
     border-radius: 8px;
 }
 #menu a:hover{
-	background-color: #30abce;
+	background-color: #bc30ce;
 }
 
 #menu .first a {
@@ -265,7 +265,7 @@ table#program td:nth-child(1) {
     width: 110px;
 } */
 tr.row_type_tt {
-	background-color: #1da5cb;
+	background-color: #cb1dbc;
 }
 tr.row_type_A {
 	background-color: #EEE;
@@ -277,16 +277,16 @@ tr.row_type_C {
 	background-color: #BEB2C8;
 }
 tr.row_type_D {
-	background-color: #9FC2CC;
+	background-color: #cc9fc8;
 }
 tr.row_type_E {
-	background-color: #30abce;
+	background-color: #c130ce;
 }
 tr.row_type_F {
 	background-color: #CAD5CA;
 }
 tr.block {
-    background-color: #00649b;
+    background-color: #89009b;
     color: #fff;
 }
 tr.row_type_A td {
@@ -344,7 +344,7 @@ button {
     font-size: 14px;
 }
 button:hover {
-    background-color: #1da5cb;
+    background-color: #c51dcb;
 }
 
 #myBtn {
@@ -356,7 +356,7 @@ button:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #1da5cb;
+    background-color: #c81dcb;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -364,5 +364,5 @@ button:hover {
 }
 
 #myBtn:hover {
-    background-color: #1da5cb;
+    background-color: #cb1dc2;
 }
