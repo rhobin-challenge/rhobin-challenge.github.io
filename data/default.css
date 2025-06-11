@@ -309,7 +309,10 @@ span.author {
     font-size: 16px;
     color: #000;
     display: block;
-    margin-bottom: 8px;
+}
+div.author-container {
+    text-align: center;
+    vertical-align: middle;
 }
 
 p.poster_title, .panel_discussion {
