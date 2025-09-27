@@ -3,7 +3,7 @@
   <head>
     <title>3rd RHOBIN Workshop@CVPR25</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link href="data/default.css" rel="stylesheet" type="text/css" />
+    <link href="data/default.css?v=1.1" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="./data/rhobin-logo.png" />
     <meta property='og:title' content='RHOBIN Workshop: Reconstruction of Human-Object Interactions @ CVPR24'/>
     <meta property='og:url' content='https://rhobin-challenge.github.io/' />
@@ -223,7 +223,7 @@ function topFunction() {
                         <a href="https://youtu.be/" target="_blank">[Video]</a>
                     </div> -->
                 </td>
-                <td id="paper2">
+                <td id="paper4">
                     <p class="poster_title">
                     PoseSynViT: Lightweight and Scalable Vision Transformers for Human Pose Estimation
                     </p>
@@ -233,7 +233,7 @@ function topFunction() {
                         </p>
                     </span>
                     <div style="text-align: center;">
-                        <button onclick="moreOrLess($('#paper2'))">Show Abstract</button>
+                        <button onclick="moreOrLess($('#paper4'))">Show Abstract</button>
                     </div>
                 </td>
         </tr>
@@ -299,94 +299,141 @@ function topFunction() {
     <table>
         <!--Human Reconstruction track-->
         <tr class="row_type_A">
-            <td width=200px" class="paper_id" rowspan="2">Human Reconstruction track</td>
-            <td width=50px"><div style="text-align: center;">1st place</div></td>
+            <td width="200px" class="paper_id" rowspan="1">Human Reconstruction track</td>
+            <td width="50px" class="place_number">1st place</td>
             <td width="600px">
                 <div style="text-align: center;">
-                    <!-- <strong><span class="author">
-                        Fabien Baradel, Thomas Lucas, Matthieu Armando, Romain Brégier,<br>
-                        Salma Galaaoui, Philippe Weinzaepfel, Gregory Rogez<br>
-                        from NAVER LABS
-                    </span></strong> -->
-                </div>
-            </td>
-        </tr>
-        <tr class="row_type_A">
-            <td width=50px"><div style="text-align: center;">2nd place</div></td>
-            <td width="600px">
-                <div style="text-align: center;">
-                    <!-- <strong><span class="author">
-                        Yangxu Yan<sup>1</sup>, Anlong Ming<sup>1</sup>, Huadong Ma<sup>1</sup>, Zhaowen Lin<sup>1</sup>,<br>
-                        Weihong Yao<sup>2</sup> from <br>
-                        <sup>1</sup>Beijing University of Posts and Telecommunications and<br>
-                        <sup>2</sup>Shanghai Vision Era Co. Ltd.
-                    </span></strong> -->
+                    <strong><span class="author">
+                        Bing Bai<sup>1</sup>, Anlong Ming<sup>1</sup>, Ruizhe Kang<sup>1</sup>, Dong Zhang<sup>1</sup>,<br>
+                        Huadong Ma<sup>1</sup>, Weihong Yao<sup>2</sup><br>
+                    </span></strong>
+                    <sup>1</sup> Beijing University of Posts and Telecommunications;<br>
+                    <sup>2</sup> Shanghai Vision Era Co. Ltd.
+                    
                 </div>
             </td>
         </tr>
 
-        <!--Joint Human-Object Reconstruction track-->
+        <!--Body Contact Estimation track-->
         <tr class="row_type_B">
-            <td width="200px" class="paper_id" rowspan="2">Joint Human-Object Reconstruction track</td>
-            <td width=50px"><div style="text-align: center;">1st place</div></td>
+            <td width="200px" class="paper_id" rowspan="2">Body Contact Estimation track</td>
+            <td width="50px" class="place_number">1st place</td>
             <td width="600px">
                 <div style="text-align: center;">
-                    <!-- <strong><span class="author">
-                        Yuyang Jing<sup>1</sup>, Anlong Ming<sup>1</sup>, Yongchang Zhang<sup>1</sup>, Xiaohai Yu<sup>1</sup>,<br>
-                        Huadong Ma<sup>1</sup>, Weihong Yao<sup>2</sup> from <br>
-                        <sup>1</sup>Beijing University of Posts and Telecommunications and<br>
-                        <sup>2</sup>Shanghai Vision Era Co. Ltd.
-                    </span></strong> -->
-                </div>
-            </td>
-        </tr>
-        <tr class="row_type_B">
-            <td width=50px"><div style="text-align: center;">2nd place</div></td>
-            <td width="600px">
-                <div style="text-align: center;">
-                    <!-- <strong><span class="author">
-                        Feng Xue<sup>1</sup>, Ke Han<sup>1</sup>, Tianrui Ye<sup>2</sup><br>
-                        from <sup>1</sup>University of Trento and<br>
-                        <sup>2</sup>University of North Carolina at Chapel Hill
-                    </span></strong> -->
-                </div>
-            </td>
-        </tr>
-
-        <!--3D Contact Estimation track-->
-        <tr class="row_type_A">
-            <td width="200px" class="paper_id" rowspan="3">3D Contact Estimation track</td>
-            <td width=50px"><div style="text-align: center;">1st place</div></td>
-            <td width="600px">
-                <div style="text-align: center;">
-                    <!-- <strong><span class="author">
-                        Qian Wu<sup>1</sup>, Jun Liu<sup>1,2</sup><br>
-                        from <sup>1</sup>Singapore University of Technology and Design and<br>
-                        <sup>2</sup>Lancaster University
-                    </span></strong> -->
-                </div>
-            </td>
-        </tr>
-        <tr class="row_type_A">
-            <td width=50px"><div style="text-align: center;">2nd place</div></td>
-            <td width="600px">
-                <div style="text-align: center;">
-                    <!-- <strong><span class="author">
+                    <strong><span class="author">
                         Chengfeng Wang, Yuhang Yang, Wei Zhai,<br>
-                        Yang Cao, Zhengjun Zha from<br>
+                        Yang Cao, Zhengjun Zha<br>
+                    </span></strong>
                         University of Science and Technology of China (USTC)
-                    </span></strong> -->
                 </div>
             </td>
         </tr>
-        <tr class="row_type_A">
-            <td width=50px"><div style="text-align: center;">3rd place</div></td>
+        <tr class="row_type_B">
+            <td width="50px" class="place_number">2nd place</td>
             <td width="600px">
                 <div style="text-align: center;">
-                    <!-- <strong><span class="author">
-                        Seungeun Lee<sup>1</sup>, Donguk Kim<sup>2</sup>, Kyungmoon Lee<sup>3</sup><br>
-                        from <sup>1</sup>KLLEON, <sup>2</sup>SHIFTUP, and <sup>3</sup>NALBI
-                    </span></strong> -->
+                    <strong><span class="author">
+                        Qingyu Huang, Yuxin Chen, Junjie Chen, Jiaqi Yu, Feng Xue<br>
+                    </span></strong>
+                        Beijing University of Posts and Telecommunications;<br>
+                        University of Trento
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!--Semantic Contact Estimation track-->
+        <tr class="row_type_A">
+            <td width="200px" class="paper_id" rowspan="3">Semantic Contact Estimation track</td>
+            <td width="50px" class="place_number">1st place</td>
+            <td width="600px">
+                <div style="text-align: center;">
+                    <strong><span class="author">
+                        Ruizhe Kang<sup>1</sup>, Anlong Ming<sup>1</sup>, Huadong Ma<sup>1</sup>, Weihong Yao<sup>2</sup><br>
+                        from University of Science and Technology of China (USTC)<br>
+                    </span></strong>
+                    <sup>1</sup>Beijing University of Posts and Telecommunications;<br>
+                    <sup>2</sup>Shanghai Vision Era Co. Ltd.
+                </div>
+            </td>
+        </tr>
+
+        <tr class="row_type_A">
+            <td width="50px" class="place_number">Best performance</td>
+            <td width="600px">
+                <div style="text-align: center;">
+                    <strong><span class="author">
+                        Sai Kumar Dwivedi<sup>1</sup>, Dimitrije Antic<sup>3</sup>, Shashank Tripathi<sup>1</sup>,<br>
+                        Omid Taheri<sup>1</sup>, Cordelia Schmid<sup>2</sup>, Michael J. Black<sup>1</sup>, Dimitrios Tzionas<sup>3</sup>
+                    </span></strong>
+                    <sup>1</sup>Max Planck Institute for Intelligent Systems, T&uuml;bingen, Germany;<br>
+                    <sup>2</sup>Inria, École normale supérieure, France;<br>
+                    <sup>3</sup>University of Amsterdam, Netherlands<br>
+                </div>
+            </td>
+        </tr>
+
+        <tr class="row_type_A">
+            <td width="50px" class="place_number">2nd place</td>
+            <td width="600px">
+                <div style="text-align: center;">
+                    <strong><span class="author">
+                        Qingyu Huang, Yuxin Chen, Junjie Chen, Jiaqi Yu, Feng Xue
+                    </span></strong>
+                    Beijing University of Posts and Telecommunications;<br>
+                    University of Trento
+                </div>
+            </td>
+        </tr>
+
+        <!--Object 6DoF Pose Estimation track-->
+        <tr class="row_type_B">
+            <td width="200px" class="paper_id" rowspan="1">Object 6DoF Pose Estimation track</td>
+            <td width="50px" class="place_number">1st place</td>
+            <td width="600px">
+                <div style="text-align: center;">
+                    <strong><span class="author">
+                        Boxuan Xu<sup>1</sup>, Anlong Ming<sup>1</sup>, Xiaohai Yu<sup>1</sup>, Ao Lv<sup>1</sup>,<br>
+                        Huadong Ma<sup>1</sup>, Zhaowen Lin<sup>1</sup>, Weihong Yao<sup>2</sup><br>
+                    </span></strong>
+                    <sup>1</sup>Beijing University of Posts and Telecommunications;<br>
+                    <sup>2</sup>Shanghai Vision Era Co. Ltd.
+                </div>
+            </td>
+        </tr>
+
+        <!--Template-Based Interaction Reconstruction track-->
+        <tr class="row_type_A">
+            <td width="200px" class="paper_id" rowspan="1">Template-Based Interaction Reconstruction track</td>
+            <td width="50px" class="place_number">1st place</td>
+            <td width="600px">
+                <div style="text-align: center;">
+                    <strong><span class="author">
+                        Yinzhe Wang<sup>1</sup>, Anlong Ming<sup>1</sup>, Boxuan Xu<sup>1</sup>, Yangxu Yan<sup>1</sup>,<br>
+                        Huadong Ma<sup>1</sup>, Weihong Yao<sup>2</sup>
+                    </span></strong>
+                    <sup>1</sup>Beijing University of Posts and Telecommunications;<br>
+                    <sup>2</sup>Shanghai Vision Era Co. Ltd.
+                </div>
+            </td>
+        </tr>
+
+
+
+
+        <!--Interaction Tracking track-->
+        <tr class="row_type_B">
+            <td width="200px" class="paper_id" rowspan="1">Interaction Tracking track</td>
+            <td width="50px" class="place_number">1st place</td>
+            <td width="600px">
+                <div style="text-align: center;">
+                    <strong><span class="author">
+                        Yongchang Zhang<sup>1</sup>, Rongkang Zhang<sup>1</sup>, Xining Yang<sup>1</sup>, Anlong Ming<sup>1</sup>,
+                        Yuyang Jing<sup>1</sup>, Huadong Ma<sup>1</sup>, Weihong Yao<sup>2</sup>
+                        </span></strong>
+                        <sup>1</sup>Beijing University of Posts and Telecommunications;<br>
+                        <sup>2</sup>Shanghai Vision Era Co. Ltd.
                 </div>
             </td>
         </tr>

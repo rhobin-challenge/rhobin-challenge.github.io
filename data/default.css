@@ -270,7 +270,7 @@ tr.row_type_A {
 	background-color: #EEE;
 }
 tr.row_type_B {
-	background-color: #FFF;
+	background-color: #F8F8F8;
 }
 tr.row_type_C {
 	background-color: #BEB2C8;
@@ -301,6 +301,10 @@ tr.row_type_D td {
 	padding: 10px 10px;
 }
 td.paper_id {
+    text-align: center;
+    font-size: 16px;
+}
+td.place_number {
     text-align: center;
     font-size: 16px;
 }
